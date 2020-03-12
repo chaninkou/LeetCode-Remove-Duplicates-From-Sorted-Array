@@ -11,6 +11,7 @@ public class RemoveDuplicatesFromSortedArrayFunction {
         }
         
         // Just the length of the final array
+        // Starting from 1 to prevent overflow
         int currentTotalLength = 1;
         
         for(int i = 1; i < n; i++){
@@ -22,5 +23,19 @@ public class RemoveDuplicatesFromSortedArrayFunction {
         }
         
         return currentTotalLength;
+    }
+    
+    public int removeDuplicates1(int[] nums) {
+        int position = 0;
+        
+        for(int n : nums){
+        	// Since only one duplicate or not position - 1 will make sure the previous duplicate is not the same
+            if(position < 1 || n > nums[position - 1]){
+                nums[position] = n;
+                position++;
+            }
+        }
+        
+        return position;
     }
 }
