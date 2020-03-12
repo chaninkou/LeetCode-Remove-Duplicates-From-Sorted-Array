@@ -11,6 +11,8 @@ public class Main {
 		
 		RemoveDuplicatesFromSortedArrayFunction solution = new RemoveDuplicatesFromSortedArrayFunction();
 		
-		System.out.println("Solution: " + solution.removeDuplicates(nums));
+		int[] answer = Arrays.copyOf(nums, solution.removeDuplicates(nums));
+		
+		System.out.println("Solution Array: " + Arrays.toString(answer));
 	}
 }
