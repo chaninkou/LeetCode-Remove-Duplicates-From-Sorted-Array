@@ -1,4 +1,4 @@
-package removeDup;
+package leetcode26;
 
 import java.util.Arrays;
 

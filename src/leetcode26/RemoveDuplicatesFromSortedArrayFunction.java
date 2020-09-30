@@ -1,4 +1,4 @@
-package removeDup;
+package leetcode26;
 
 public class RemoveDuplicatesFromSortedArrayFunction {
     public int removeDuplicates(int[] nums) {
